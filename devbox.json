@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/main/.schema/devbox.schema.json",
+  "packages": ["nodejs@20", "chromium@latest"],
+  "env": {
+    "PUPPETEER_SKIP_DOWNLOAD": "true",
+    "PUPPETEER_EXECUTABLE_PATH": "chromium"
+  },
+  "shell": {
+    "init_hook": [
+      "echo '✅ Devbox environment loaded'",
+      "echo '🌐 Chromium path:' $(which chromium 2>/dev/null || echo 'not found in PATH')",
+      "export PUPPETEER_EXECUTABLE_PATH=$(which chromium 2>/dev/null || echo '/usr/bin/chromium')"
+    ],
+    "scripts": {
+      "build": "npm run build",
+      "dev": "npm run dev",
+      "preview": "npm run preview",
+      "setup": "npm install"
+    }
+  }
+}

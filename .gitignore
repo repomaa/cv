@@ -1,0 +1,30 @@
+*.log
+.DS_Store
+node_modules
+/.svelte-kit
+/build
+/dist
+.env
+.env.local
+.env.*.local
+.vercel
+.netlify
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+.cache
+.parcel-cache
+
+# Devbox
+.devbox/
+devbox.lock
+
+# Puppeteer
+.puppeteer
+
+# CI/CD (don't ignore .github directory)
+!.github/
+node_modules/

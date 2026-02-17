@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Custom font imports */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2')
+    format('woff2');
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Theme configuration - 5 colors per layout */
+@theme {
+  /* Font families */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+
+  /* Web layout - 5 colors using light-dark() for dark mode */
+  --color-bg: light-dark(#fafafa, #0c0c0e);
+  --color-fg: light-dark(#18181b, #fafafa);
+  --color-muted: light-dark(#71717a, #a1a1aa);
+  --color-accent: light-dark(#0891b2, #22d3ee);
+  --color-hot: light-dark(#ea580c, #fb923c);
+
+  /* PDF layout - 4 colors (print-optimized) */
+  --color-pdf-bg: #ffffff;
+  --color-pdf-fg: #000000;
+  --color-pdf-muted: #525252;
+  --color-pdf-accent: #0284c7;
+
+  --shadow-glow: 0 0 10px
+    light-dark(
+      color-mix(in oklab, var(--color-accent) 30%, transparent 70%),
+      color-mix(in oklab, var(--color-accent) 70%, transparent 30%)
+    );
+}

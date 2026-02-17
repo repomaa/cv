@@ -1,0 +1,9 @@
+{
+  "institution": "Hochschule RheinMain",
+  "degree": "Bachelor of Science",
+  "field": "Applied Computer Science",
+  "location": "Wiesbaden, Germany",
+  "startDate": "2010",
+  "endDate": "2016",
+  "description": "Bachelor thesis: 'Collaborative Content Creation' - built a scalable CMS with real-time collaboration, hierarchical caching, and JSON-API using Crystal and Redux"
+}

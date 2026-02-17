@@ -1,0 +1,16 @@
+{
+  "company": "hundertzehn GmbH",
+  "position": "Senior Software Engineer",
+  "location": "Zürich, Schweiz",
+  "startDate": "2021",
+  "description": "Full-Stack Engineer for MOCO Cloud-ERP-SaaS serving 7'500+ SMEs. Develop Ruby-on-Rails backend, REST/GraphQL APIs, React/TypeScript frontends. Analyze large datasets, evaluate new technologies, integrate external APIs (Paywise), direct customer communication. Leading AI integration including Support Agent and MCP functionality. Key technical figure in SaaS product context ensuring platform stability at 60'000 daily active users.",
+  "technologies": [
+    "Ruby on Rails",
+    "TypeScript",
+    "React",
+    "PostgreSQL",
+    "GraphQL",
+    "REST APIs",
+    "Grafana"
+  ]
+}

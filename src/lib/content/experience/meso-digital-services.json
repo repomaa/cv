@@ -1,0 +1,17 @@
+{
+  "company": "MESO Digital Services GmbH",
+  "position": "Software Engineer",
+  "location": "Frankfurt, Germany",
+  "startDate": "2014",
+  "endDate": "2021",
+  "description": "Developed software solutions for digital communication, IoT platforms, and cloud services. Key projects: Energybox - high-resolution big data IoT platform processing 1 billion+ data points daily with horizontally scalable sensor cloud backend, API, and frontend. HERE Technologies - experience platform and CMS for CES showcasing location intelligence. HfG Offenbach - database-driven university website with custom CMS for content management.",
+  "technologies": [
+    "Crystal",
+    "Ruby on Rails",
+    "JavaScript",
+    "MongoDB",
+    "REST APIs",
+    "IoT",
+    "Big Data"
+  ]
+}
