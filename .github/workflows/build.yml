@@ -41,12 +41,7 @@ jobs:
           path: build/
           retention-days: 7
 
-      # Uncomment and configure for deployment:
-      # - name: Deploy to server
-      #   if: github.ref == 'refs/heads/main'
-      #   run: |
-      #     # Add your deployment commands here
-      #     # Example using rsync:
-      #     # rsync -avz --delete build/ user@your-server:/var/www/cv/
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Deploy to statichost.eu
+        if: github.ref == 'refs/heads/main'
+        run: |
+          curl -XPOST https://builder.statichost.eu/repomaa-cv
