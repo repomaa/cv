@@ -1,0 +1,11 @@
+image: alpine
+command: |
+  apk add --no-cache curl jq unzip &&
+  curl -s -H "Authorization: token $GITHUB_TOKEN" \
+    "https://api.github.com/repos/repomaa/cv/actions/artifacts?per_page=1" | \
+    jq -r '.artifacts[0].archive_download_url' | \
+    xargs -I {} curl -s -L -H "Authorization: token $GITHUB_TOKEN" -o artifact.zip {} &&
+  unzip -o artifact.zip -d public
+public: public
+domains:
+  - joakim.repomaa.com
