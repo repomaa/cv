@@ -11,6 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@fontsource/iosevka": "^5.2.5",
     "@sveltia/cms": "^0.140.3"
   },
   "keywords": [

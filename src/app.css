@@ -1,23 +1,8 @@
 @import 'tailwindcss';
 
-/* Custom font imports */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2')
-    format('woff2');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2')
-    format('woff2');
-}
+/* Iosevka font - self-hosted via npm */
+@import '@fontsource/iosevka/400.css';
+@import '@fontsource/iosevka/700.css';
 
 html {
   color-scheme: light dark;
@@ -31,7 +16,7 @@ body {
 /* Theme configuration - 5 colors per layout */
 @theme {
   /* Font families */
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-mono: 'Iosevka', ui-monospace, monospace;
   --font-sans: ui-sans-serif, system-ui, sans-serif;
 
   /* Web layout - 5 colors using light-dark() for dark mode */
