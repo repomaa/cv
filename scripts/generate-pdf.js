@@ -7,7 +7,7 @@ import { writeFile } from 'fs/promises';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const BUILD_DIR = join(__dirname, '..', 'build');
-const OUTPUT_PDF = join(BUILD_DIR, 'cv.pdf');
+const OUTPUT_PDF = join(BUILD_DIR, 'joakim-repomaa-cv.pdf');
 
 async function generatePDF() {
   console.log('🚀 Starting PDF generation...');
